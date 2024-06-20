@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set karakter set dan viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>Website Konversi Suhu</title>
+    <!-- Tautan ke file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Kontainer utama -->
+    <div class="container">
+        <!-- Judul -->
+        <div>
+            <h2>Website Konversi Suhu</h2>
+            <!-- Petunjuk -->
+            <h5>Masukkan suhu derajat Celcius (°C) ke kotak bawah, <br> lalu klik tombol Konversi. 
+                untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F)</h5>
+            <p>Keterangan : suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat
+                Celcius (°C) kali 9/5 tambah 32 S(°F)=(S(°C)×9/5)+32 atau S(°F)=(S(°C)×1.8)+32</p>
+            <!-- Penutup tag h5 yang tidak diperlukan <h5> -->
+        </div>
+        <!-- Input suhu -->
+        <div class="input">
+            <div>
+                <!-- Label untuk input Celsius -->
+                <label for="input1">Celsius (°C)</label>
+                <br>
+                <!-- Input untuk Celsius -->
+                <input type="number" name="input1" id="input1">
+            </div>
+            <br>
+            <div>
+                <!-- Label untuk input Fahrenheit -->
+                <label for="input2">Fahrenheit (°F)</label>
+                <br>
+                <!-- Input untuk Fahrenheit -->
+                <input type="number" name="input2" id="input2">
+            </div>
+        </div>
+        <!-- Tombol-tombol -->
+        <div class="button">
+            <!-- Tombol untuk memulai konversi -->
+            <button type="button">Konversi</button>
+            <!-- Tombol untuk mereset input -->
+            <button type="button">Reset</button>
+            <!-- Tombol untuk menukar input -->
+            <button type="button">Reverse</button>
+        </div>
+        <!-- Cara Kalkulasi Suhu -->
+        <h3>Cara Kalkulasi Dari Celcius (°C) ke Fahrenheit (°F) 
+        </h3>
+        <!-- Hasil konversi akan ditampilkan di sini -->
+        <div class="result" id="result"></div>
+    </div>
+    <!-- Tautan ke file JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
